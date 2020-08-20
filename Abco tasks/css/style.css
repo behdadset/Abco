@@ -1,0 +1,85 @@
+.main{
+    margin: 0 auto;
+    width: 350px;
+    margin-top: 200px;
+    color: rgb(111, 111, 111);
+}
+
+/* Border for body */
+.body{
+    border-style: groove;
+}
+
+/* Inside the body except progress bar */
+.texts{
+    padding: 15px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Progress bar mouse hover  */
+.newtooltip {
+    position: relative;
+}
+  
+.newtooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: rgb(62, 62, 62);
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    padding: 10px;
+}
+
+.newtooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.newtooltip:hover .newtooltiptext {
+    visibility: visible;
+}
+
+/* Progress bar style */
+.progress{
+    border: 1px inset #ccc;
+}
+
+.progress-bar{
+    background-color: rgb(255, 68, 0);
+}
+
+/* Style for value inputs */
+.currencyinput {
+    border: 1px inset #ccc;
+    padding: 10px;
+}
+
+.currencyinput input {
+    border: 0;
+    margin-left: 10px;
+    width: 70px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mybtn, .inputs{
+    font-size: 18px;
+}
